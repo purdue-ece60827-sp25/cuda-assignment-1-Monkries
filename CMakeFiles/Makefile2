@@ -97,8 +97,8 @@ src/clean: src/CMakeFiles/cpuLib.dir/clean
 # Target rules for target CMakeFiles/lab1.dir
 
 # All Build rule for target.
-CMakeFiles/lab1.dir/all: src/CMakeFiles/cudaLib.dir/all
 CMakeFiles/lab1.dir/all: src/CMakeFiles/cpuLib.dir/all
+CMakeFiles/lab1.dir/all: src/CMakeFiles/cudaLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shield36/cuda-assignment-1-Monkries/CMakeFiles --progress-num=5,6 "Built target lab1"

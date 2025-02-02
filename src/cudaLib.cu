@@ -34,6 +34,7 @@ int runGpuSaxpy(int vectorSize) {
 	float* z;
 	float scale = 2.0f; //rand() % 100;
 
+	//Mem allocation
 	x = (float*) malloc(vectorBytes);
 	y = (float*) malloc(vectorBytes);
 	z = (float*) malloc(vectorBytes);
@@ -70,8 +71,7 @@ int runGpuSaxpy(int vectorSize) {
                 printf(" ... }\n");
 
         #endif
-
-//	verifyVector(x, y, z, scale, vectorSize);
+	//Free memory
 	cudaFree (x_d);
 	cudaFree (y_d);
 	cudaFree (x);
@@ -168,6 +168,7 @@ double estimatePi(uint64_t generateThreadCount, uint64_t sampleSize,
 	uint64_t* total_d;
 	uint64_t hitcount = 0;
 
+	//Allocate memory
 	total = (uint64_t*)malloc(RedVectorSize);
 	cudaMalloc((void **)&hit_d, vectorSize);
 	cudaMalloc((void **)&total_d, RedVectorSize);
@@ -180,6 +181,7 @@ double estimatePi(uint64_t generateThreadCount, uint64_t sampleSize,
 		hitcount += total[i];
 	}
 
+	//Free mem and  approx pi
 	approxPi = 4.0f * hitcount / (sampleSize * generateThreadCount);
 
 	free(total);
