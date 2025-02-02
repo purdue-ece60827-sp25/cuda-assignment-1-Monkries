@@ -1,0 +1,7 @@
+/home/shield36/cuda-assignment-1-Monkries/CMakeFiles/lab1.dir
+/home/shield36/cuda-assignment-1-Monkries/CMakeFiles/edit_cache.dir
+/home/shield36/cuda-assignment-1-Monkries/CMakeFiles/rebuild_cache.dir
+/home/shield36/cuda-assignment-1-Monkries/src/CMakeFiles/cudaLib.dir
+/home/shield36/cuda-assignment-1-Monkries/src/CMakeFiles/cpuLib.dir
+/home/shield36/cuda-assignment-1-Monkries/src/CMakeFiles/edit_cache.dir
+/home/shield36/cuda-assignment-1-Monkries/src/CMakeFiles/rebuild_cache.dir
